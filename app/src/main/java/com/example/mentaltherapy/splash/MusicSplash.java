@@ -1,28 +1,28 @@
-package com.example.mentaltherapy;
+package com.example.mentaltherapy.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.mentaltherapy.Music;
+import com.example.mentaltherapy.R;
 
-public class LoadingSplash extends AppCompatActivity {
+public class MusicSplash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loading_splash);
-        TextView hi=findViewById(R.id.hi);
-        LottieAnimationView hiAnimation=findViewById(R.id.loadingSplash);
+        setContentView(R.layout.activity_music_splash);
+        LottieAnimationView music=findViewById(R.id.musicSplash);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(LoadingSplash.this,MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), Music.class));
                 finish();
             }
-        },2000);
+        },2500);
     }
 }

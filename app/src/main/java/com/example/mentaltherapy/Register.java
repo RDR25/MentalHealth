@@ -7,10 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.mentaltherapy.splash.LoadingSplash;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -58,7 +57,7 @@ public class Register extends AppCompatActivity {
                                 databaseReference.child("users").child(mobilenumberText).child("email").setValue(emailText);
                                 databaseReference.child("users").child(mobilenumberText).child("password").setValue(passwordText);
                                 Toast.makeText(Register.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Register.this,LoadingSplash.class));
+                                startActivity(new Intent(Register.this, LoadingSplash.class));
                                 finish();
                             }
                         }

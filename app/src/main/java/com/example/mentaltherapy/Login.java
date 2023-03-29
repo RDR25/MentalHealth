@@ -7,10 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.mentaltherapy.splash.LoadingSplash;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -52,7 +51,7 @@ public class Login extends AppCompatActivity {
                             if(snapshot.hasChild(mobileNumberText)){
                                 final String getPassword=snapshot.child(mobileNumberText).child("password").getValue(String.class);
                                 if(getPassword.equals(passwordText)){
-                                    startActivity(new Intent(Login.this,LoadingSplash.class));
+                                    startActivity(new Intent(Login.this, LoadingSplash.class));
                                 }else{
                                     Toast.makeText(Login.this, "Invalid Details", Toast.LENGTH_SHORT).show();
                                 }

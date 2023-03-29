@@ -12,7 +12,43 @@
         android:theme="@style/Theme.MentalTherapy"
         tools:targetApi="31">
         <activity
-            android:name=".LoadingSplash"
+            android:name=".splash.ChallengeSplash"
+            android:exported="false" />
+        <activity
+            android:name=".splash.NotesSplash"
+            android:exported="false" />
+        <activity
+            android:name=".splash.MusicSplash"
+            android:exported="false" />
+        <activity
+            android:name=".splash.ChatbotSplash"
+            android:exported="false" />
+        <activity
+            android:name=".splash.MeditationSplash"
+            android:exported="false" />
+        <activity
+            android:name=".splash.EmergencySplash"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency"
+            android:exported="false" />
+        <activity
+            android:name=".Music"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge"
+            android:exported="false" />
+        <activity
+            android:name=".Notes"
+            android:exported="false" />
+        <activity
+            android:name=".Chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".Meditation"
+            android:exported="false" />
+        <activity
+            android:name=".splash.LoadingSplash"
             android:exported="false" />
         <activity
             android:name=".Register"
@@ -21,7 +57,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".IntroSplash"
+            android:name=".splash.IntroSplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
