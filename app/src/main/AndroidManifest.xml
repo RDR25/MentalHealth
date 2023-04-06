@@ -30,22 +30,22 @@
             android:name=".splash.EmergencySplash"
             android:exported="false" />
         <activity
-            android:name=".Emergency"
+            android:name=".menu.Emergency"
             android:exported="false" />
         <activity
-            android:name=".Music"
+            android:name=".menu.Music"
             android:exported="false" />
         <activity
-            android:name=".Challenge"
+            android:name=".menu.Challenge"
             android:exported="false" />
         <activity
-            android:name=".Notes"
+            android:name=".menu.Notes"
             android:exported="false" />
         <activity
-            android:name=".Chatbot"
+            android:name=".menu.Chatbot"
             android:exported="false" />
         <activity
-            android:name=".Meditation"
+            android:name=".menu.Meditation"
             android:exported="false" />
         <activity
             android:name=".splash.LoadingSplash"

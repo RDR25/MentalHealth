@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.mentaltherapy.Emergency;
+import com.example.mentaltherapy.menu.Emergency;
 import com.example.mentaltherapy.R;
 
 public class EmergencySplash extends AppCompatActivity {

@@ -1,14 +1,15 @@
-package com.example.mentaltherapy;
+package com.example.mentaltherapy.menu.chatbot;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.mentaltherapy.R;
 
 import java.util.List;
 
@@ -39,9 +40,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MyViewHo
                 holder.rightChatView.setVisibility(View.GONE);
             }
         }else {
-            holder.rightTextView.setVisibility(View.GONE);
-            holder.leftChatView.setVisibility(View.VISIBLE);
-            holder.leftTextView.setText(message.getMessage());
+            if(!(message.getMessage().equals(""))){
+                holder.leftTextView.setText(message.getMessage());
+                holder.rightChatView.setVisibility(View.GONE);
+                holder.leftChatView.setVisibility(View.VISIBLE);
+            }else{
+                holder.leftChatView.setVisibility(View.GONE);
+                holder.rightChatView.setVisibility(View.GONE);
+            }
         }
     }
 

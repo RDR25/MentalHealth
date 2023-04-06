@@ -1,4 +1,4 @@
-package com.example.mentaltherapy;
+package com.example.mentaltherapy.menu.chatbot;
 
 public class Message {
     public static String SENT_BY_ME="me";

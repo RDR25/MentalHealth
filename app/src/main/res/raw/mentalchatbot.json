@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trainingagent-jtuo",
+  "private_key_id": "9537faf200f43ea84c28e90d7198e6e73f8cb4f6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDTkalVIbYguIrs\n0wekHF54hZfh6w51ewOXSgqCASf17awHPuOW1OR81QF73Pi1cVGa6x64gZPGz9wq\nOtm2XGuEJMaWEDQ5pDk5SJLZ1onuRWO316xi3xIDTpYG1GmvkqdaOAqfvgIRG37W\nQcdWewFkXUhpR3gRbrOCnvkTKa/vT42IgbzFMFn7jfa4HZGEsF3SMW5ndhSxArIL\nVSgMaWIXKOkNcGkEShauUX1R7P6StF/M9Bydn4K1heseaffo58O3cBszB8TpEsGK\nYsF7iRfCsGCPDw2vO4/D+gDMUQHmh2fGoViJlcSB9GekLI9GQ7yoCMIZN8k7EPby\nUZ/4Zs4zAgMBAAECggEAV7Wn90CiEj+fbJ3yKYGPUrTDqie6F083xmUuJQZYrDZr\nnpdeX94DmZLu6gxKWWJQvAJkeoZRntb2hdVfA6Cd/CsI3xZ5qDnidVKWetPb29mN\nhR5W+6hR/ef6/3rZE64fTiI0mVP65F+7PhUIEFyvT43yop678rIrnmfMh7q9Et7t\nk6i+6IQ05kfRrewOISPqtXqmunN28BeyFmxpIIF8tgnwKfXhPbZht0YKINl+ZizK\nMinD6OJGZwiwhB4M1j9rbltAtQRsqhuK0tqYbI1nvjKRJW/H3LgFe1HQ8b4j4vOv\n++jxaTmoR3P+u4eClQ+nwP8FCyYRj6z0oUqkRUS1oQKBgQDwZxCeb5pOzmdQXM+U\nRRqsfYYoZY3wIlVa4i0uayOhNevbEJOWHLSh/ysg+hNmNonuazD492lbUbDGOoNt\n9xwSs5iqow/8r1SDGAntVAE/OpcUBRrpYXFG4J66mgRGh4K9ieFanNOGYvo6u7qX\n0n+lQ4SRQUSuP7T5rv7Fo+2vkwKBgQDhS7BFYfh+YOyz78n3wNloXrIaSqU3j8c8\nbbG3CKJlfg7BkG4U0B3IkKSEaG/U9UlK9nh2PncZax/mgIlnfSxObTNIg9I/HvVN\n0MJufG/W89JHlmCxk9xFIoL5A04Y0PY2NIGQ4O2qWXzB+7AhHy3ywwxLxV9Y3sH4\nEaa5oqVK4QKBgETMCep9X7h7wv8xgEobOJXyWilHXsZA3RJkNa/aA1lIOBX5+XJ1\nBpBxmKMYTeLraq+rR1mIXENA7ojcB+65T/ReJyt1/MZAWrwlbfnYF39DwiZ9i4UM\nWMGC2InoN58DervJMI+g37vOqXOTc8Os/tCJsO9ssT34h08I8GoZDpU3AoGAHXfE\n6o5R7lXHIBHxHNLAnQIl0YKJ8aaArMq8P/CFLTk7vN2jSF2gR6eDnT37wqMCnyd1\nwiGRemWkmoWdc0fQD8IAvy9exJrMAw2XINRt3HOvwWVN6Gwql3BYKTHheSV7zsM3\nXzfMXkeuJcFB3FMzs1kHtrFuMzWPsV69q/I2JIECgYBFTkBlmOBDkzPv6BEMTLNT\nU8xnOJGbXFw+WOm8fApbfzt/4MICBzfkBpdTbj17HbkWoknb691dcmIzmx+gdLoV\nyw8jTt/bRByURPimzshIKwf4OArY/bNCqGD6Egy2JcNnbGFAB0uuOrA/uPfotgBI\n0GNhnVxYxtMgBiGCPeXSRg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mentalhealtbot@trainingagent-jtuo.iam.gserviceaccount.com",
+  "client_id": "100813578696924152437",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mentalhealtbot%40trainingagent-jtuo.iam.gserviceaccount.com"
+}

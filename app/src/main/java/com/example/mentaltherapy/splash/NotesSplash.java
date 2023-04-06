@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.mentaltherapy.Notes;
+import com.example.mentaltherapy.menu.Notes;
 import com.example.mentaltherapy.R;
 
 public class NotesSplash extends AppCompatActivity {

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.mentaltherapy.Challenge;
+import com.example.mentaltherapy.menu.Challenge;
 import com.example.mentaltherapy.R;
 
 public class ChallengeSplash extends AppCompatActivity {

@@ -1,14 +1,16 @@
-package com.example.mentaltherapy;
+package com.example.mentaltherapy.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Emergency extends AppCompatActivity {
+import com.example.mentaltherapy.R;
+
+public class Music extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_emergency);
+        setContentView(R.layout.activity_music);
     }
 }

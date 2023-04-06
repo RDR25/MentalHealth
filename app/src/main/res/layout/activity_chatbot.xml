@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Chatbot">
+    tools:context=".menu.Chatbot">
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,19 +20,20 @@
         android:layout_alignParentBottom="true"
         >
         <EditText
-            android:elevation="-20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/msgText"
             android:singleLine="true"
             android:hint="Enter Message"
-            android:textColorHint="@color/rdr1"
+            android:textColorHint="#4662C5"
             android:padding="15dp"
+            android:textSize="14dp"
             android:layout_toLeftOf="@+id/sendBtn"
             android:background="@drawable/rounded_corner"/>
        <ImageButton
            android:layout_marginLeft="5dp"
            android:padding="15dp"
+           android:backgroundTint="@color/white"
            android:layout_width="48dp"
            android:layout_height="48dp"
            android:layout_alignParentEnd="true"

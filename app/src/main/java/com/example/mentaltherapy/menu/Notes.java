@@ -1,8 +1,10 @@
-package com.example.mentaltherapy;
+package com.example.mentaltherapy.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mentaltherapy.R;
 
 public class Notes extends AppCompatActivity {
 

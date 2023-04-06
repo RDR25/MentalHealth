@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.mentaltherapy.Chatbot;
+import com.example.mentaltherapy.menu.Chatbot;
 import com.example.mentaltherapy.R;
 
 public class ChatbotSplash extends AppCompatActivity {

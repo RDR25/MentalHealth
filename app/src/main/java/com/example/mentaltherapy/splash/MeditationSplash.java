@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.mentaltherapy.Meditation;
+import com.example.mentaltherapy.menu.Meditation;
 import com.example.mentaltherapy.R;
 
 public class MeditationSplash extends AppCompatActivity {
