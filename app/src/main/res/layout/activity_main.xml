@@ -15,7 +15,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="@color/rdr1"
+            android:background="@color/rdr2"
             />
         <View
             android:layout_width="match_parent"

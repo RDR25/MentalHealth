@@ -4,9 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+
     tools:context=".menu.Chatbot">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MentalTherapy"
+            android:padding="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/headertext"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:background="@drawable/colorgradient"
+            />
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rVchats"
@@ -20,14 +40,14 @@
         android:layout_alignParentBottom="true"
         >
         <EditText
+            android:elevation="-20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/msgText"
             android:singleLine="true"
             android:hint="Enter Message"
-            android:textColorHint="#4662C5"
+            android:textColorHint="@color/rdr1"
             android:padding="15dp"
-            android:textSize="14dp"
             android:layout_toLeftOf="@+id/sendBtn"
             android:background="@drawable/rounded_corner"/>
        <ImageButton

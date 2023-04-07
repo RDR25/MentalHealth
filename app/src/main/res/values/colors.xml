@@ -8,8 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#EDEBEB</color>
-    <color name="rdr1">#3F3B6C</color>
-    <color name="rdr2">#624FB2</color>
-    <color name="rdr3">#9F73AB</color>
+    <color name="rdr1">#0E3667</color>
+    <color name="rdr2">#0252B5</color>
+    <color name="rdr3">#2B7BDD</color>
     <color name="rdr4">#A3C7D6</color>
 </resources>

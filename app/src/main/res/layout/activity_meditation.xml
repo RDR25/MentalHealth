@@ -5,23 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".menu.Meditation">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        >
+        android:layout_alignParentTop="true"
+        android:id="@+id/headerMeditation">
         <TextView
-            android:textStyle="bold"
-            android:textColor="@color/rdr1"
-            android:textSize="35dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/rdr1"
-            android:foregroundGravity="center"
-            android:text="Hello from Meditation Activity :)"
-            android:gravity="center"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
+            android:text="MentalTherapy"
+            android:padding="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:background="@drawable/colorgradient"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcMedVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerMeditation"
+        />
+
 </RelativeLayout>

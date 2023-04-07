@@ -13,7 +13,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/rdr1"
+        android:background="@color/rdr2"
         />
     <View
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
         </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/loginLoginbtn"
-            android:background="@color/rdr1"
+            android:background="@color/rdr2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
