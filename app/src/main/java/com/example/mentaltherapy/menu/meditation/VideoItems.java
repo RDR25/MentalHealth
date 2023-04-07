@@ -4,8 +4,17 @@ import android.net.Uri;
 
 public class VideoItems {
     int videourl;
+    int imgurl;
     String videoTitle;
     String videoDiscription;
+
+    public int getImgurl() {
+        return imgurl;
+    }
+
+    public void setImgurl(int imgurl) {
+        this.imgurl = imgurl;
+    }
 
     public int getVideourl() {
         return videourl;
@@ -31,8 +40,9 @@ public class VideoItems {
         this.videoDiscription = vifeoDiscription;
     }
 
-    public VideoItems(int videourl, String videoTitle, String vifeoDiscription) {
+    public VideoItems(int videourl,int imgurl, String videoTitle, String vifeoDiscription) {
         this.videourl = videourl;
+        this.imgurl=imgurl;
         this.videoTitle = videoTitle;
         this.videoDiscription = vifeoDiscription;
     }

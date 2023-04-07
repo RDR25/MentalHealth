@@ -21,9 +21,9 @@ public class Meditation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meditation);
         List<VideoItems> videoItemsList=new ArrayList<VideoItems>();
-        videoItemsList.add(new VideoItems(R.raw.demo_video,"RDR","This is a demo"));
-        videoItemsList.add(new VideoItems(R.raw.demo_video,"RDR","This is a demo"));
-        videoItemsList.add(new VideoItems(R.raw.demo_video,"RDR","This is a demo"));
+        videoItemsList.add(new VideoItems(R.raw.demo_video,R.drawable.yogaimg,"RDR","This is a demo"));
+        videoItemsList.add(new VideoItems(R.raw.videoplayback,R.drawable.yogaimg,"RDR","This is a demo"));
+        videoItemsList.add(new VideoItems(R.raw.demo_video,R.drawable.yogaimg,"RDR","This is a demo"));
         RecyclerView recyclerView=findViewById(R.id.rcMedVideo);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new VideoAdapter(getApplicationContext(),videoItemsList));
