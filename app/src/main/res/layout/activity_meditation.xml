@@ -2,10 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".menu.Meditation">
     <RelativeLayout
+        android:elevation="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,33 +21,33 @@
             android:textStyle="bold"
             android:textAlignment="textStart"
             android:textColor="@color/white"
-            android:background="@drawable/colorgradient"
+            android:background="@drawable/bg1"
             />
     </RelativeLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcMedVideo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/headerMeditation"
-        />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/rcMedVideo"
-        >
-        <Button
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@null"
-            app:backgroundTint="@null"
-            android:background="@color/rdr2"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcMedVideo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Complete"
+            android:layout_below="@+id/headerMeditation"
             />
-    </LinearLayout>
-
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/rcMedVideo"
+            >
+            <Button
+                android:id="@+id/medCompleteBtn"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:background="@color/rdr2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Complete"
+                />
+        </LinearLayout>
 </RelativeLayout>
