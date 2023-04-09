@@ -20,6 +20,7 @@ import java.util.List;
 public class Meditation extends AppCompatActivity {
     public static final String SHARED_PREFS="sharedPrefs";
     public static final String TEXT="text";
+
     Button completeBtn;
     Button rewatchBtn;
     @Override

@@ -57,7 +57,7 @@ public class Register extends AppCompatActivity {
                                 databaseReference.child("users").child(mobilenumberText).child("email").setValue(emailText);
                                 databaseReference.child("users").child(mobilenumberText).child("password").setValue(passwordText);
                                 Toast.makeText(Register.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Register.this, LoadingSplash.class));
+                                startActivity(new Intent(Register.this, Login.class));
                                 finish();
                             }
                         }

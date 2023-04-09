@@ -1,9 +1,12 @@
 package com.example.mentaltherapy;
 
+import static com.example.mentaltherapy.menu.Meditation.SHARED_PREFS;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +24,10 @@ import java.util.Objects;
 
 public class Login extends AppCompatActivity {
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://mentaltherapy-b1c38-default-rtdb.firebaseio.com/");
+    SharedPreferences sharedPreferences;
 
+    public static final String USER="user";
+    SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +57,16 @@ public class Login extends AppCompatActivity {
                             if(snapshot.hasChild(mobileNumberText)){
                                 final String getPassword=snapshot.child(mobileNumberText).child("password").getValue(String.class);
                                 if(getPassword.equals(passwordText)){
-                                    startActivity(new Intent(Login.this, LoadingSplash.class));
+                                    sharedPreferences=getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+                                    editor=sharedPreferences.edit();
+                                    editor.putString(USER,mobileNumberText.toString());
+                                    editor.apply();
+                                    if(snapshot.child(mobileNumberText).hasChild("contact1")){
+                                        startActivity(new Intent(Login.this, LoadingSplash.class));
+                                    }else {
+                                        startActivity(new Intent(Login.this, AddContacts.class));
+                                    }
+
                                 }else{
                                     Toast.makeText(Login.this, "Invalid Details", Toast.LENGTH_SHORT).show();
                                 }

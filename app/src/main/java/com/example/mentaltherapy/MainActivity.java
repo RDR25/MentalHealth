@@ -28,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     SimpleDateFormat sdf;
-    static String dateVal="null";
-    String currentDate;
+
+    public static final String DATE_PRV="dateprv";
+    public static final String DATE_CURR="datecurr";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,13 +47,23 @@ public class MainActivity extends AppCompatActivity {
                 sharedPreferences=getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
                 editor=sharedPreferences.edit();
                 sdf=new SimpleDateFormat("dd.MM.yyyy");
-                currentDate=sdf.format(new Date());
-                Toast.makeText(MainActivity.this, currentDate+" "+dateVal, Toast.LENGTH_SHORT).show();
-                if(dateVal.equals("null")) dateVal=currentDate;
-                if(!(currentDate.equals(dateVal))){
+                editor.putString(DATE_CURR,sdf.format(new Date()));
+                editor.apply();
+                Toast.makeText(MainActivity.this, sharedPreferences.getString(DATE_PRV,"")+" "+sharedPreferences.getString(DATE_CURR,""), Toast.LENGTH_SHORT).show();
+                if(sharedPreferences.getString(DATE_PRV,"").equals("")){
+                    editor.putString(DATE_PRV,sharedPreferences.getString(DATE_CURR,""));
+                    editor.apply();
+                }
+               // if(dateVal.equals("null")) dateVal=currentDate;
+                if(!(sharedPreferences.getString(DATE_PRV,"").equals(sharedPreferences.getString(DATE_CURR,"")))){
+                    editor.putString(TEXT,"incomplete");
+                    editor.putString(DATE_PRV,sharedPreferences.getString(DATE_CURR,""));
+                    editor.apply();
+                }
+              /*  if(!(currentDate.equals(dateVal))){
                     editor.putString(TEXT,"incomplete");
                     dateVal=currentDate;
-                }
+                }*/
 
                 if(sharedPreferences.getString(TEXT,"").equals("complete")){
                     startActivity(new Intent(MainActivity.this, MedCompleted.class));
