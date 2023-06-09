@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3C1C1"
+    tools:context=".menu.notes.Newnotes">
+    <ScrollView
+        android:foregroundGravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <EditText
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newnoteTitle"
+                android:hint="Title"
+                android:textSize="25dp"
+
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/notesbg"/>
+            <EditText
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newnoteDescription"
+                android:hint="Description"
+                android:gravity="top"
+                android:lines="18"
+                android:background="@drawable/notesbg"/>
+            <Button
+                android:elevation="10dp"
+                android:id="@+id/notesSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Save nOTE"
+                android:backgroundTint="@color/rdr3"
+                />
+            <Button
+                android:elevation="10dp"
+                android:id="@+id/notesDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="DELETE"
+                android:textColor="@color/rdr3"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

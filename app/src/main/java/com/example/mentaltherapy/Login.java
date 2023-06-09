@@ -23,9 +23,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Objects;
 
 public class Login extends AppCompatActivity {
-    DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://mentaltherapy-b1c38-default-rtdb.firebaseio.com/");
+    public static FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
+    public static DatabaseReference databaseReference=firebaseDatabase.getReferenceFromUrl("https://mentaltherapy-b1c38-default-rtdb.firebaseio.com/");
     SharedPreferences sharedPreferences;
-
     public static final String USER="user";
     SharedPreferences.Editor editor;
     @Override
@@ -61,6 +61,7 @@ public class Login extends AppCompatActivity {
                                     editor=sharedPreferences.edit();
                                     editor.putString(USER,mobileNumberText.toString());
                                     editor.apply();
+                                    Toast.makeText(Login.this, sharedPreferences.getString(USER,""), Toast.LENGTH_SHORT).show();
                                     if(snapshot.child(mobileNumberText).hasChild("contact1")){
                                         startActivity(new Intent(Login.this, LoadingSplash.class));
                                     }else {
